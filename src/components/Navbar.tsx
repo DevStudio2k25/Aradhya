@@ -161,10 +161,10 @@ const Navbar = () => {
 
         .logo span {
           font-family: var(--font-logo);
-          font-size: 28px;
+          font-size: 26px;
           color: var(--text-dark);
-          letter-spacing: -0.5px;
-          text-transform: lowercase;
+          letter-spacing: 2px;
+          text-transform: uppercase;
         }
 
         .nav-links {
