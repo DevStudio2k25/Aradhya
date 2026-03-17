@@ -101,11 +101,22 @@ const ArtisanShowcase = () => {
         @media (max-width: 992px) {
           .artisan-wrapper {
             grid-template-columns: 1fr;
-            gap: 60px;
+            gap: 40px;
             text-align: center;
           }
           .artisan-header h2 {
-            font-size: 42px;
+            font-size: 36px;
+            margin-bottom: 30px;
+          }
+          .weaver-img {
+            max-width: 500px;
+            margin: 0 auto;
+          }
+          .overlay-circle {
+            width: 150px;
+            height: 150px;
+            top: -20px;
+            right: 0;
           }
         }
       `}</style>

@@ -116,23 +116,29 @@ const About = () => {
         @media (max-width: 992px) {
           .about-grid {
             grid-template-columns: 1fr;
-            gap: 60px;
+            gap: 40px;
           }
-
           .about-image {
             order: 2;
+            max-width: 500px;
+            margin: 0 auto;
           }
-
           .about-content {
             order: 1;
             text-align: center;
           }
-          
-          .experience-badge {
-            bottom: 20px;
-            right: 20px;
-            padding: 20px;
+          .about-content h2 {
+            font-size: 32px;
           }
+          .about-content p {
+            font-size: 16px;
+          }
+          .experience-badge {
+            bottom: 10px;
+            right: 10px;
+            padding: 15px;
+          }
+          .years { font-size: 24px; }
         }
       `}</style>
     </section>

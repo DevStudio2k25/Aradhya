@@ -92,7 +92,7 @@ const Hero = () => {
         }
 
         .hero-content h1 {
-          font-size: clamp(48px, 8vw, 84px);
+          font-size: clamp(38px, 10vw, 84px);
           line-height: 1.1;
           color: var(--text-dark);
           margin-bottom: 20px;
@@ -104,7 +104,7 @@ const Hero = () => {
         }
 
         .hero-content p {
-          font-size: 20px;
+          font-size: 18px;
           color: var(--text-muted);
           max-width: 600px;
           margin-bottom: 40px;
@@ -117,7 +117,7 @@ const Hero = () => {
 
         @media (max-width: 768px) {
           .hero-overlay {
-            background: rgba(248, 245, 240, 0.6);
+            background: rgba(248, 245, 240, 0.7);
           }
           
           .hero-content {
@@ -125,10 +125,14 @@ const Hero = () => {
             text-align: center;
           }
 
+          .hero-content h1 {
+            font-size: 42px;
+          }
+
           .hero-btns {
             flex-direction: column;
             width: 100%;
-            max-width: 300px;
+            max-width: 260px;
           }
         }
       `}</style>

@@ -68,20 +68,17 @@ const Footer = () => {
           text-align: left;
         }
 
-        .footer-logo {
+        .brand-name {
           font-family: var(--font-serif);
-          font-size: 32px;
-          font-weight: 700;
+          font-size: 28px;
           letter-spacing: 4px;
-          color: var(--text-dark);
-          margin-bottom: 25px;
-          display: block;
+          margin-bottom: 20px;
         }
 
         .footer-brand p {
           color: var(--text-muted);
           margin-bottom: 25px;
-          font-size: 16px;
+          font-size: 15px;
           max-width: 350px;
         }
 
@@ -92,20 +89,30 @@ const Footer = () => {
 
         .social-links a {
           color: var(--text-dark);
-          transition: color 0.3s ease;
+          transition: 0.3s;
+          width: 40px;
+          height: 40px;
+          background: var(--bg-cream);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .social-links a:hover {
-          color: var(--primary-gold);
+          color: white;
+          background: var(--primary-gold);
+          transform: translateY(-3px);
         }
 
         .footer-links h3, .footer-contact h3 {
           font-family: var(--font-sans);
-          font-size: 18px;
-          font-weight: 600;
+          font-size: 14px;
+          font-weight: 700;
           margin-bottom: 25px;
           text-transform: uppercase;
-          letter-spacing: 1px;
+          letter-spacing: 2px;
+          color: var(--primary-gold);
         }
 
         .footer-links ul li {

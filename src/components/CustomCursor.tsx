@@ -36,7 +36,7 @@ const CustomCursor = () => {
   }, [mouseX, mouseY]);
 
   return (
-    <>
+    <div className="cursor-wrapper">
       <motion.div
         className="cursor-dot"
         style={{
@@ -60,6 +60,15 @@ const CustomCursor = () => {
         }}
       />
       <style>{`
+        .cursor-wrapper {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 0;
+          z-index: 9999;
+          pointer-events: none;
+        }
         .cursor-dot {
           position: fixed;
           top: 0;
@@ -83,12 +92,12 @@ const CustomCursor = () => {
           pointer-events: none;
         }
         @media (max-width: 768px) {
-          .cursor-dot, .cursor-ring {
+          .cursor-wrapper {
             display: none;
           }
         }
       `}</style>
-    </>
+    </div>
   );
 };
 

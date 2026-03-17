@@ -109,6 +109,19 @@ const FeaturedCategories = () => {
           text-transform: uppercase;
           letter-spacing: 1px;
         }
+        @media (max-width: 992px) {
+          .categories-grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+          }
+          .category-card:nth-child(1) {
+            grid-row: span 1;
+            height: 400px;
+          }
+          .category-card {
+            height: 300px;
+          }
+        }
       `}</style>
     </section>
   );

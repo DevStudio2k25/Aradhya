@@ -322,13 +322,29 @@ const Contact = () => {
         @media (max-width: 992px) {
           .contact-wrapper {
             grid-template-columns: 1fr;
-            padding: 30px;
+            padding: 40px 30px;
           }
           .contact-hero h1 {
             font-size: 48px;
           }
           .form-row {
             grid-template-columns: 1fr;
+            gap: 0;
+          }
+          .faq-grid {
+            grid-template-columns: 1fr;
+          }
+          .boutique-preview {
+            height: 200px;
+          }
+        }
+        @media (max-width: 600px) {
+          .contact-hero h1 {
+            font-size: 36px;
+          }
+          .contact-wrapper {
+            padding: 30px 20px;
+            border-radius: 20px;
           }
         }
       `}</style>

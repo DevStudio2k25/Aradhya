@@ -76,6 +76,14 @@ const InstagramGrid = () => {
             grid-template-columns: repeat(2, 1fr);
           }
         }
+        @media (max-width: 480px) {
+          .insta-grid {
+            grid-template-columns: 1fr;
+          }
+          .instagram-section {
+            padding: 60px 0;
+          }
+        }
       `}</style>
     </section>
   );

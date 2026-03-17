@@ -1,4 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap');
+
+@font-face {
+  font-family: 'Halfre';
+  src: url('/fonts/halfre.otf') format('opentype'),
+       url('/fonts/halfre.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
+  --font-logo: 'Halfre', sans-serif;
   --bg-cream: #F8F5F0;
   --bg-beige: #F1EDE4;
   --primary-gold: #D4AF37;
@@ -34,16 +45,21 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
+  width: 100%;
+  position: relative;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--bg-cream);
-  overflow-x: hidden;
+  overflow-x: clip;
+  width: 100%;
+  position: relative;
+  touch-action: manipulation;
+  -webkit-text-size-adjust: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -54,6 +70,19 @@ h1, h2, h3, h4 {
 
 #root {
   width: 100%;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding: 0 20px;
+  }
 }
 
 a {
@@ -75,12 +104,19 @@ button {
 }
 
 section {
-  padding: 80px 5%;
+  padding: 100px 0;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  section {
+    padding: 80px 0;
+  }
 }
 
 @media (max-width: 768px) {
   section {
-    padding: 60px 20px;
+    padding: 60px 0;
   }
 }
 

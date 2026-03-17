@@ -105,12 +105,20 @@ const Lookbook = () => {
         @media (max-width: 992px) {
           .lookbook-display {
             grid-template-columns: 1fr;
+            gap: 40px;
           }
           .lookbook-main {
-            height: 500px;
+            height: 450px;
+            border-radius: 20px;
           }
           .text-float {
             display: none;
+          }
+          .lookbook-description h3 {
+            font-size: 28px;
+          }
+          .lookbook-description p {
+            font-size: 16px;
           }
         }
       `}</style>

@@ -144,11 +144,20 @@ const Collection = () => {
         }
         .collection-hero {
           text-align: center;
-          padding: 100px 5%;
+          padding: 80px 24px;
         }
         .collection-hero h1 {
-          font-size: 72px;
+          font-size: clamp(42px, 10vw, 72px);
           margin-bottom: 20px;
+          line-height: 1.1;
+        }
+        @media (max-width: 600px) {
+          .collection-hero {
+            padding: 60px 20px;
+          }
+          .collection-hero h1 {
+            font-size: 38px;
+          }
         }
         .horizontal-container {
           position: relative;
@@ -171,6 +180,12 @@ const Collection = () => {
         .scroll-item {
           flex: 0 0 450px;
           height: 600px;
+        }
+        @media (max-width: 768px) {
+          .scroll-item {
+            flex: 0 0 300px;
+            height: 450px;
+          }
         }
         .item-image {
           position: relative;
@@ -197,6 +212,13 @@ const Collection = () => {
           opacity: 0;
           transition: opacity 0.3s ease;
         }
+        @media (max-width: 768px) {
+          .item-overlay {
+            opacity: 1;
+            padding: 20px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+          }
+        }
         .scroll-item:hover .item-overlay {
           opacity: 1;
         }
@@ -217,12 +239,12 @@ const Collection = () => {
           object-fit: cover;
         }
         .catalog-info {
-          padding: 20px;
+           padding: 20px;
         }
         .container-wide {
           max-width: 1600px;
           margin: 0 auto;
-          padding: 0 40px;
+          padding: 0 5%;
         }
         .material-focus {
           padding: 150px 0;
@@ -292,6 +314,21 @@ const Collection = () => {
         .draping-text-center h2 {
           font-size: 64px;
         }
+        @media (max-width: 768px) {
+          .draping-text-center h2 {
+            font-size: 38px;
+          }
+          .material-focus, .draping-section {
+            padding: 80px 0;
+          }
+           .lead-text {
+            font-size: 18px;
+            margin: 20px 0 40px;
+          }
+          .material-content-premium {
+            padding-right: 0;
+          }
+        }
         .draping-visual-main {
           position: relative;
           max-width: 1000px;
@@ -336,6 +373,17 @@ const Collection = () => {
           color: var(--text-muted);
           margin-bottom: 40px;
         }
+        @media (max-width: 768px) {
+           .draping-description-bottom p {
+            font-size: 16px;
+          }
+          .material-tag {
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 14px;
+          }
+        }
 
         @media (max-width: 1200px) {
           .draping-specs {
@@ -347,6 +395,11 @@ const Collection = () => {
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 40px;
+            gap: 15px;
+          }
+          .spec {
+            padding: 12px 25px;
+            font-size: 14px;
           }
           .material-grid {
             grid-template-columns: 1fr;

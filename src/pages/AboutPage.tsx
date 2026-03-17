@@ -140,8 +140,12 @@ const AboutPage = () => {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 60px;
-          padding: 100px 0;
           align-items: center;
+        }
+        .story-image img {
+          width: 100%;
+          border-radius: 30px;
+          box-shadow: var(--shadow-soft);
         }
         .stats {
           display: flex;
@@ -151,6 +155,13 @@ const AboutPage = () => {
         .stat-item h3 {
           font-size: 32px;
           color: var(--primary-gold);
+          margin-bottom: 5px;
+        }
+        .stat-item p {
+          font-size: 14px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: var(--text-muted);
         }
         .centered-title {
           text-align: center;
@@ -237,6 +248,46 @@ const AboutPage = () => {
           .founder-grid {
             grid-template-columns: 1fr;
             text-align: center;
+          }
+          .hero-text h1 {
+            font-size: 48px;
+          }
+          .story-grid {
+            grid-template-columns: 1fr;
+            gap: 40px;
+            text-align: center;
+          }
+          .story-image {
+            max-width: 500px;
+            margin: 0 auto;
+          }
+          .stats {
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+          }
+          .stat-item {
+            min-width: 100px;
+          }
+          .phi-card {
+            padding: 30px 20px;
+          }
+          .philosophy-grid {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+        @media (max-width: 480px) {
+          .philosophy-grid {
+            grid-template-columns: 1fr;
+          }
+          .hero-text h1 {
+            font-size: 38px;
+          }
+          .stat-item h3 {
+            font-size: 24px;
+          }
+          .stats {
+            gap: 15px;
           }
         }
       `}</style>

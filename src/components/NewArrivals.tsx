@@ -107,6 +107,15 @@ const NewArrivals = () => {
           font-weight: 600;
           font-size: 16px;
         }
+        @media (max-width: 600px) {
+          .product-grid {
+            grid-template-columns: 1fr;
+            gap: 30px;
+          }
+          .product-image {
+            height: 450px;
+          }
+        }
       `}</style>
     </section>
   );
